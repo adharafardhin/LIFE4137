@@ -6,7 +6,7 @@ ToDo: Add short description here
 
 ## **Overview of the Project**
 ### **Aims**
-- ToDo: The aim of this project is to investigate the evolutionary conservation and structural diversity of centromeric regions across Cochlearia excelsa, Cochlearia groenlandica, and Cochlearia pyrenaica through comparative genomics. 
+The aim of this project is to investigate the evolutionary conservation and structural diversity of centromeric regions across Cochlearia excelsa, Cochlearia groenlandica, and Cochlearia pyrenaica through comparative genomics. 
 ### **Outcome**
 - ToDo: Add outcomes here
 
