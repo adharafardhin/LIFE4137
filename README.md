@@ -1,8 +1,11 @@
 # **LIFE4137 Bioinformatics Individual Research Project**
 
-## **Project Title and Description**
-**Comparative Genomic Analysis of Centromeric Regions in Cochlearia Species: Insights into Evolutionary Conservation and Structural Variation**  
-This project focuses on the comparative genomic analysis of centromeric regions across Cochlearia species to explore their evolutionary conservation and structural variation. By utilizing advanced bioinformatics tools, the study aims to uncover the dynamics of centromere evolution and its role in speciation and genomic stability within these species.
+## **Project Title**
+### **Comparative Genomic Analysis of Centromeric Regions in Cochlearia Species: Insights into Evolutionary Conservation and Structural Variation**  
+
+## **Brief description of the project**
+
+#### This project focuses on the comparative genomic analysis of centromeric regions across Cochlearia species to explore their evolutionary conservation and structural variation. By utilizing advanced bioinformatics tools, the study aims to uncover the dynamics of centromere evolution and its role in speciation and genomic stability within these species.
 
 ## **Overview of the Project**
 ### **Aims**
