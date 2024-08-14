@@ -11,9 +11,6 @@ This project focuses on the comparative genomic analysis of centromeric regions 
 - Identify and study the repetitive DNA sequences in these centromeric regions to understand their role in keeping chromosomes stable and how they might influence species differences.
 - Examine the similarities and differences in the structure of these centromeric regions to learn more about how they evolve and affect plant genomes.
 
-### **Results**
-- ToDo: Add results here
-
 ## **Repository Overview**
 
 | Directories                     | Description                                                                      |
