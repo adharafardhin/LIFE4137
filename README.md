@@ -58,6 +58,41 @@ Customizable Parameters: TRASH offers a wide range of customizable parameters, a
 
 This tool was essential for this project as it enabled the precise identification and annotation of repetitive DNA elements within the Cochlearia species genomes. These repetitive elements, particularly tandem repeats, are crucial in identifying centromeric regions, which are typically rich in such sequences. By using TRASH, I was able to pinpoint these regions with greater accuracy, facilitating the subsequent analysis of their structural variation and evolutionary conservation. This tool's ability to handle complex, repetitive sequences without prior knowledge of specific repeat families was particularly valuable in this comparative genomic study, where centromeric regions were expected to be highly variable yet evolutionarily significant.
 
+#### Command usage:
+
+```bash
+TRASH_run.sh assembly.fa --o /absolute/path/to/output_directory
+```
+
+where:
+
+- assembly.fa is the input FASTA file
+- --o specifies the absolute path to the output directory
+
+Additional options:
+
+- --def: Use the default R packages path.
+- --rmtemp: Remove the "*_out" directory after run completion.
+- --simpleplot: Generate a plot with repeat coordinates and their sizes for each sequence, in addition to the circos plot.
+- --horclass name: Set the name of the repeat family for higher-order repeat (HOR) calculations, activating the HOR module.
+- --limrepno x: Limit alignment sizes used during the run to calculate consensus. Default is 78000 bp.
+- --horonly x: Skip repeat identification and only calculate HORs; requires the -horclass flag.
+- --minhor x: Discard HORs shorter than this value. Default is 3.
+- --maxdiv x: Ignore pairs of repeats with a divergence score higher than this value when identifying HORs. Default is 5.
+- --maxchr x: Limit the total number of sequences analyzed, useful for assemblies with many contigs.
+- --k x: Set the k-mer size (default 10). Lower values for more degraded arrays, higher for extra stringency (range 8-16 recommended).
+- --t x: Threshold score for choosing repetitive windows. Default is 5, similar to k-mer size changes.
+- --win x: Set the window size for initial repeat content counting. Default is 1000 bp.
+- --m x: Maximum repeat size to be identified, limited by the -win setting.
+- --freg x: Filter out regions smaller than this value at initial steps.
+- --frep x: Filter out repeats shorter than this value. Default is 4.
+- --seqt path: Path to the file with repeat family templates, formatted as required.
+- --par x: Maximum number of cores used for multithreading. Defaults to 1; set to 0 to use maximum available cores.
+- --randomseed x: Set a random seed for reproducibility of the repeat identification.
+- --N.max.div x: Threshold score for monomer splitting; set lower for more divisions. Default is 100.
+- --max.N.split x: Maximum number of N divisions in monomer splitting. Default is 12.
+- --smooth.percent x: Smoothing factor for finding histogram peaks in monomer splitting. Default is 2.
+
 ## ModDotPlot: Rapid and Interactive Visualization of Complex Repeats
 ModDotPlot is a powerful visualization tool designed for creating dot plots that showcase complex repeat structures in large genomic sequences. It generates identity heatmaps by rapidly approximating the Average Nucleotide Identity (ANI) between pairwise combinations of genomic intervals. This tool is particularly useful for researchers who need to visualize and compare large sequences or whole genomes efficiently.
 
