@@ -15,12 +15,19 @@ The aim of this project is to investigate the evolutionary conservation and stru
 
 ## **Repository Overview**
 
-| Section                     | Description                                                                      |
+| Directories                     | Description                                                                      |
 |-----------------------------|----------------------------------------------------------------------------------|
-| **Guideline Readme Files**  | Instructions and guidelines for the project.                                     |
-| **Datasets**                | Contains all the datasets used in the project, including source and preprocessing details. |
-| **Tools**                   | A list of bioinformatics tools and software required for the project.            |
-| **Scripts**                 | Custom scripts developed for data analysis, processing, and visualization.       |
+| **installation_guidelines**  | Instructions and guidelines for the installing the tools.                                     |
+| **datasets**                | Details about the datasets used. |
+| **scripts**                   | Scripts used in this project           |
+
+### List of scripts
+
+| Script name                     | Description                                                                      |
+|-----------------------------|----------------------------------------------------------------------------------|
+| **installation_guidelines**  | Instructions and guidelines for the installing the tools.                                     |
+| **datasets**                | Details about the datasets used. |
+| **scripts**                   | Scripts used in this project           |
 
 ## **Prerequisites**
 - ToDo: Add here
