@@ -141,6 +141,29 @@ MUMmer4 is a powerful and flexible system designed for the rapid alignment of DN
 
 MUMmer4 was used in this project to align the genomes of different Cochlearia species with the reference genome of Cochlearia excelsa. This tool was essential for identifying conserved regions and structural variations, such as inversions and translocations, across the genomes. By visualizing these alignments, MUMmer4 helped me understand how centromeric regions have evolved differently among the species, making it a key tool for analyzing genomic similarities and differences efficiently.
 
+#### Command usage:
+
+`./nucmer  -p <prefix>  ref.fa  qry.fa`
+
+where:
+
+- ref.fa is the reference sequence file in FASTA format
+- qry.fa is query file containing multiple sequences in FASTA format
+
+To produce the following file:
+   
+ `<prefix>.delta`
+
+To see the alignment coordinates, type:
+
+`show-coords <prefix>.delta > <prefix>.coords`
+ 
+To plot the alignments, if you have gnuplot installed, run
+the perl script `mummerplot` on the output files. This script can be run
+on mummer output (.out), or nucmer/promer output (.delta). 
+
+`./mummerplot -l <prefix>.delta`
+
 ## MCScanX: Multiple Collinearity Scan Toolkit
 MCScanX is a powerful bioinformatics tool designed for synteny analysis, which identifies and visualizes collinear blocks of genes across multiple genomes. It builds upon the original MCScan algorithm, offering enhanced functionality and a suite of downstream analysis tools. MCScanX is widely used in comparative genomics studies to understand genome evolution, gene duplication, and structural variations between species.
 
