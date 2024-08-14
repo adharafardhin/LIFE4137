@@ -41,7 +41,36 @@
 | trash_slurm_job_pyranica.sh             | Script to run TRASH for identifying and annotating repeats in Cochlearia pyrenaica genome.          |
 
 ## **Prerequisites**
-- ToDo: Add here
+
+Before running the analysis, ensure that the following software and tools are installed:
+
+1. **GCC (g++ version >= 4.7)**: 
+   - Essential for compiling several tools from source.
+   - Install the necessary compilation tools (e.g., `build-essential` on Debian/Ubuntu).
+
+2. **MUMmer4 Dependencies**:
+   - **perl5 (version 5.6.0 or higher)**: Required for running MUMmer4 scripts.
+   - **sh**: Shell interpreter needed for executing scripts.
+   - **sed**: Stream editor used for text processing.
+   - **awk**: Text processing utility for data extraction and reporting.
+   - Ensure all these utilities are accessible via the system path.
+
+3. **Python 3.8+**:
+   - Required for running custom scripts and bioinformatics tools.
+   - Manage dependencies using `conda` or `venv` for creating isolated environments.
+
+4. **R 4.1.3 or above**:
+   - Required for statistical analyses and data visualization.
+   - Key packages include `ggplot2`, `dplyr`, `tidyverse`.
+
+5. **Conda**:
+   - Recommended for managing environments and dependencies, particularly for Python and R packages.
+
+6. **Virtual Environment (venv)**:
+   - If not using `conda`, setting up a Python virtual environment with `venv` is recommended to manage dependencies effectively.
+
+Ensure that all the required software and tools are installed and properly configured in your environment before running the scripts.
+
 
 ## Tools
 
