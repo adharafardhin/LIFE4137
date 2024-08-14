@@ -67,7 +67,7 @@ Before running the analysis, ensure that the following software and tools are in
    - Recommended for managing environments and dependencies, particularly for Python and R packages.
 
 6. **Virtual Environment (venv)**:
-   - If not using `conda`, setting up a Python virtual environment with `venv` is recommended to manage dependencies effectively.
+   - If not using `conda`, setting up a Python virtual environment with `venv` is recommended to manage dependencies effectively. For some tools, I used venv instead of conda.
 
 Ensure that all the required software and tools are installed and properly configured in your environment before running the scripts.
 
