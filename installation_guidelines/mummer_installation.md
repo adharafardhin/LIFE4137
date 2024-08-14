@@ -8,6 +8,8 @@
   - sh
   - sed
   - awk
+ 
+### Download the latest release from here https://github.com/mummer4/mummer/releases
 
 ### Compilation and installation:
 
