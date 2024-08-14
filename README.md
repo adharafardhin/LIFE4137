@@ -23,11 +23,21 @@ The aim of this project is to investigate the evolutionary conservation and stru
 
 ### List of scripts
 
-| Script name                     | Description                                                                      |
-|-----------------------------|----------------------------------------------------------------------------------|
-| **installation_guidelines**  | Instructions and guidelines for the installing the tools.                                     |
-| **datasets**                | Details about the datasets used. |
-| **scripts**                   | Scripts used in this project           |
+| Script Names                           | Descriptions                                                                                       |
+|----------------------------------------|----------------------------------------------------------------------------------------------------|
+| Liftoff_job_Groenlandica.sh             | Script to run Liftoff for transferring gene annotations from Cochlearia excelsa to C. groenlandica. |
+| Liftoff_job_Pyranica.sh                 | Script to run Liftoff for transferring gene annotations from Cochlearia excelsa to C. pyrenaica.    |
+| ModDotPlot_job_excelsa.sh               | Script to run ModDotPlot for visualizing centromeric regions in Cochlearia excelsa genome.          |
+| ModDotPlot_job_gro.sh                   | Script to run ModDotPlot for visualizing centromeric regions in Cochlearia groenlandica genome.     |
+| ModDotPlot_job_pyr.sh                   | Script to run ModDotPlot for visualizing centromeric regions in Cochlearia pyrenaica genome.        |
+| find_top_scores.py                      | Python script to identify the top synteny blocks based on scoring criteria.                         |
+| find_top_synteny_blocks.py              | Python script to extract and analyze top synteny blocks for further visualization.                  |
+| mummer_job_Excelsa.sh                   | Script to run MUMmer4 for genome alignment of C. excelsa against other genomes.                     |
+| mummer_job_Groenlandica.sh              | Script to run MUMmer4 for genome alignment of C. groenlandica against other genomes.                |
+| mummer_job_Pyranica.sh                  | Script to run MUMmer4 for genome alignment of C. pyrenaica against other genomes.                   |
+| trash_slurm_job_Excelsa.sh      | Script to run TRASH for identifying and annotating repeats in Cochlearia excelsa genome.            |
+| trash_slurm_job_Groenlandica.sh| Script to run TRASH for identifying and annotating repeats in Cochlearia groenlandica genome.       |
+| trash_slurm_job_pyranica.sh             | Script to run TRASH for identifying and annotating repeats in Cochlearia pyrenaica genome.          |
 
 ## **Prerequisites**
 - ToDo: Add here
