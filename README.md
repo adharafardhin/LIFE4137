@@ -84,6 +84,27 @@ Liftoff is a bioinformatics tool designed to accurately map gene annotations fro
 
 Liftoff was utilized in this project to transfer gene annotations from the reference genome of Cochlearia excelsa to the target genomes of Cochlearia groenlandica and Cochlearia pyrenaica. This tool was essential for identifying conserved genes within and around the centromeric regions across different species, which facilitated the comparative analysis of gene content and synteny. By accurately mapping gene annotations between genomes, Liftoff enabled the detection of conserved syntenic blocks, contributing to our understanding of evolutionary conservation and divergence in these genomic regions. The ability to lift over annotations was crucial for comparing structural and functional elements in the centromeric regions of these closely related species, providing insights into their genomic evolution.
 
+#### Command usage:
+
+```bash
+liftoff -g ref_annotation_file_dir.gff3 \
+        -o output_dir.gff3 \
+        -u unmapped_features.txt \
+        -dir intermediate_files_Gry \
+        first_input_file_dir \
+        second_input_file_dir
+```
+where: 
+
+- g: Specifies the reference annotation file in GFF3 format, which contains the gene annotations from C. excelsa.
+- o: Specifies the output file where the Liftoff results (the transferred annotations) will be saved.
+- u: Specifies the file to store any features that could not be mapped to the target genome.
+- dir: Specifies the directory for storing intermediate files generated during the Liftoff process.
+  
+Input Files:
+- The first input file is the target genome sequence (C. groenlandica).
+- The second input file is the reference genome sequence (C. excelsa).
+
 ## MUMmer4: A Versatile Genome Alignment Tool
 MUMmer4 is a powerful and flexible system designed for the rapid alignment of DNA and protein sequences. It is capable of handling a wide range of genome sizes, from small bacterial genomes to large mammalian genomes. MUMmer4 is particularly effective for comparing and analyzing large and complex genomic datasets, offering tools for both nucleotide and protein alignments.
 
