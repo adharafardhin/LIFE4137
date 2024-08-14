@@ -212,6 +212,46 @@ MCScanX is a powerful bioinformatics tool designed for synteny analysis, which i
 
 MCScanX was used in this project to identify and analyze syntenic blocks—conserved regions of gene order—across the genomes of the Cochlearia species. This tool was crucial for detecting evolutionary relationships by highlighting areas where the gene order is preserved, particularly around centromeric regions. By using MCScanX, I could better understand how these regions have been conserved or diverged over time, providing insights into the structural and functional evolution of the genomes. Its ability to efficiently compare multiple genomes made it an essential tool for exploring the synteny and structural variation in this study.
 
+#### Command usage:
+
+### Required Input Files:
+1. **xyz.blast**: The output file from BLASTP in m8 format, containing gene similarity information. This file can be generated using the following BLASTP command:
+    ```bash
+    blastall -i query_file -d database -p blastp -e 1e-10 -b 5 -v 5 -m 8 -o xyz.blast
+    ```
+    - **-i**: Input query file (protein sequences).
+    - **-d**: Database file.
+    - **-p**: Program type (blastp for protein-protein comparisons).
+    - **-e**: E-value threshold for reporting matches.
+    - **-b, -v**: Limits on the number of sequences and alignments to show.
+    - **-m 8**: Output format (m8 for tabular).
+    - **-o**: Output file name.
+
+2. **xyz.bed**: A tab-delimited file containing gene positions. The format is as follows:
+    ```plaintext
+    chr#    starting_position   ending_position   gene
+    ```
+    - **chr#**: Chromosome identifier with a two-letter prefix for the species and the chromosome number (e.g., at2 for the second chromosome of *Arabidopsis thaliana*).
+    - **starting_position**: Start position of the gene on the chromosome.
+    - **ending_position**: End position of the gene on the chromosome.
+    - **gene**: Gene name or identifier.
+
+### Running MCScanX:
+1. Ensure that both `xyz.blast` and `xyz.bed` files are placed in the same directory.
+2. Run MCScanX with the following command:
+    ```bash
+    ./MCScanx dir/xyz
+    ```
+    - **dir/xyz**: The directory containing your `xyz.blast` and `xyz.gff3` files.
+
+### Explanation:
+- **MCScanx**: The executable for running MCScanX.
+- **dir/xyz**: The path to the directory where the `xyz.blast` and `xyz.gff3` files are located. The program will use these files to detect syntenic blocks and align them against reference genomes.
+
+### Notes:
+- To generate accurate results, it is recommended to restrict the number of BLASTP hits per gene to the top 5.
+- When comparing multiple genomes, concatenate all inter-/intra-species BLAST outputs into a single `xyz.blast` file, and concatenate all gene positions into a single `xyz.bed` file.
+
 # SLURM: Simple Linux Utility for Resource Management
 
 SLURM is a powerful, open-source job scheduling system used to manage and allocate resources on high-performance computing (HPC) clusters. It allows users to submit, manage, and monitor jobs efficiently, making it an essential tool for large-scale computational tasks. Since this project involved processing, analysis, comparison, and visualisation of large datas, I had to use SLURM to manage my jobs efficiently on the HPC cloud computer. 
