@@ -37,6 +37,10 @@ TRASH (Tandem Repeat Annotation and Structural Hierarchy) is a bioinformatics to
 - Multithreading Support: The tool supports multithreading, enabling the efficient processing of large genomic datasets by utilizing multiple cores.
 Customizable Parameters: TRASH offers a wide range of customizable parameters, allowing users to fine-tune the analysis to meet specific research needs.
 
+#### Why TRASH?
+
+This tool was essential for this project as it enabled the precise identification and annotation of repetitive DNA elements within the Cochlearia species genomes. These repetitive elements, particularly tandem repeats, are crucial in identifying centromeric regions, which are typically rich in such sequences. By using TRASH, I was able to pinpoint these regions with greater accuracy, facilitating the subsequent analysis of their structural variation and evolutionary conservation. This tool's ability to handle complex, repetitive sequences without prior knowledge of specific repeat families was particularly valuable in this comparative genomic study, where centromeric regions were expected to be highly variable yet evolutionarily significant.
+
 ## ModDotPlot: Rapid and Interactive Visualization of Complex Repeats
 ModDotPlot is a powerful visualization tool designed for creating dot plots that showcase complex repeat structures in large genomic sequences. It generates identity heatmaps by rapidly approximating the Average Nucleotide Identity (ANI) between pairwise combinations of genomic intervals. This tool is particularly useful for researchers who need to visualize and compare large sequences or whole genomes efficiently.
 
@@ -46,6 +50,10 @@ ModDotPlot is a powerful visualization tool designed for creating dot plots that
 - Customizable Visualization: Users can adjust parameters such as k-mer size, resolution, and color palettes to tailor the dot plots to their specific research needs. ModDotPlot also supports detailed configuration through JSON files for creating highly customized plots.
 - Efficient Computation: By leveraging k-mer-based identity estimation and a modimizer sketching technique, ModDotPlot significantly reduces the computational time required to produce dot plots, making it suitable for real-time analysis of large datasets.
 
+#### Why ModDotPlot?
+
+It was a critical tool in this project for visualizing and identifying centromeric regions within the genomes of the Cochlearia species. This tool allows for the creation of detailed dot plots that highlight regions of high sequence similarity, which are indicative of repetitive elements often found in centromeres. By applying ModDotPlot, I could effectively visualize these repetitive regions across large genomic scaffolds, enabling the identification of centromeric regions based on the characteristic dense and symmetric patterns typical of centromeric DNA. This visualization was essential for confirming the repeat analysis performed with TRASH and provided a clear and intuitive way to assess the structural integrity and conservation of these genomic regions across the different species analyzed.
+
 ## Liftoff: Accurate Gene Annotation Lift-over Tool
 Liftoff is a bioinformatics tool designed to accurately map gene annotations from one genome assembly to another, particularly between assemblies of the same or closely related species. Unlike traditional lift-over tools that require pre-generated chain files, Liftoff operates as a standalone tool, simplifying the process and increasing flexibility.
 
@@ -54,6 +62,10 @@ Liftoff is a bioinformatics tool designed to accurately map gene annotations fro
 - Transcript and Gene Structure Preservation: Liftoff preserves the structure of transcripts and genes during the mapping process, ensuring that exons are aligned in a way that maximizes sequence identity.
 - Handling of Multiple Gene Copies: The tool can identify additional gene copies present in the target genome that are not annotated in the reference genome, enhancing the completeness of gene annotations.
 - Polishing Annotations: Liftoff includes an option to polish exon and CDS annotations, improving the accuracy of coding sequence preservation, particularly in cases where the initial lift-over may introduce errors such as frame shifts or missing start/stop codons.
+
+#### Why Liftoff?
+
+Liftoff was utilized in this project to transfer gene annotations from the reference genome of Cochlearia excelsa to the target genomes of Cochlearia groenlandica and Cochlearia pyrenaica. This tool was essential for identifying conserved genes within and around the centromeric regions across different species, which facilitated the comparative analysis of gene content and synteny. By accurately mapping gene annotations between genomes, Liftoff enabled the detection of conserved syntenic blocks, contributing to our understanding of evolutionary conservation and divergence in these genomic regions. The ability to lift over annotations was crucial for comparing structural and functional elements in the centromeric regions of these closely related species, providing insights into their genomic evolution.
 
 ## MUMmer4: A Versatile Genome Alignment Tool
 MUMmer4 is a powerful and flexible system designed for the rapid alignment of DNA and protein sequences. It is capable of handling a wide range of genome sizes, from small bacterial genomes to large mammalian genomes. MUMmer4 is particularly effective for comparing and analyzing large and complex genomic datasets, offering tools for both nucleotide and protein alignments.
@@ -66,6 +78,10 @@ MUMmer4 is a powerful and flexible system designed for the rapid alignment of DN
 - Open Source: Available under the Artistic License 2.0, allowing for wide accessibility and modifications.
 - Scalability: Efficiently handles all-vs-all comparisons, making it suitable for both small and large-scale genomic studies.
 
+#### Why MUMmer4?
+
+MUMmer4 was used in this project to align the genomes of different Cochlearia species with the reference genome of Cochlearia excelsa. This tool was essential for identifying conserved regions and structural variations, such as inversions and translocations, across the genomes. By visualizing these alignments, MUMmer4 helped me understand how centromeric regions have evolved differently among the species, making it a key tool for analyzing genomic similarities and differences efficiently.
+
 ## MCScanX: Multiple Collinearity Scan Toolkit
 MCScanX is a powerful bioinformatics tool designed for synteny analysis, which identifies and visualizes collinear blocks of genes across multiple genomes. It builds upon the original MCScan algorithm, offering enhanced functionality and a suite of downstream analysis tools. MCScanX is widely used in comparative genomics studies to understand genome evolution, gene duplication, and structural variations between species.
 
@@ -74,6 +90,10 @@ MCScanX is a powerful bioinformatics tool designed for synteny analysis, which i
 - Gene Duplication Classification: The tool classifies duplicated genes into categories such as whole-genome duplications, tandem duplications, and segmental duplications.
 - Visualization Tools: MCScanX includes various visualization tools like dot plots, dual synteny plots, circular plots, and bar plots, helping researchers to graphically represent syntenic relationships and chromosomal rearrangements.
 - Downstream Analyses: The toolset includes multiple downstream analysis programs for advanced studies, such as detecting syntenic tandem arrays, analyzing multiple alignments, and calculating Ka/Ks values for evolutionary studies.
+
+#### Why MCScanX?
+
+MCScanX was used in this project to identify and analyze syntenic blocks—conserved regions of gene order—across the genomes of the Cochlearia species. This tool was crucial for detecting evolutionary relationships by highlighting areas where the gene order is preserved, particularly around centromeric regions. By using MCScanX, I could better understand how these regions have been conserved or diverged over time, providing insights into the structural and functional evolution of the genomes. Its ability to efficiently compare multiple genomes made it an essential tool for exploring the synteny and structural variation in this study.
 
 # SLURM: Simple Linux Utility for Resource Management
 
