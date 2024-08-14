@@ -1,4 +1,4 @@
-# **CIFSA: LIFE4137 Bioinformatics Individual Research Project**
+# **LIFE4137 Bioinformatics Individual Research Project**
 
 ## **Project Title and Description**
 **Comparative Genomic Analysis of Centromeric Regions in Cochlearia Species: Insights into Evolutionary Conservation and Structural Variation**  
