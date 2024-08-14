@@ -2,13 +2,14 @@
 
 ## **Project Title and Description**
 **Comparative Genomic Analysis of Centromeric Regions in Cochlearia Species: Insights into Evolutionary Conservation and Structural Variation**  
-ToDo: Add short description here
+This project focuses on the comparative genomic analysis of centromeric regions across Cochlearia species to explore their evolutionary conservation and structural variation. By utilizing advanced bioinformatics tools, the study aims to uncover the dynamics of centromere evolution and its role in speciation and genomic stability within these species.
 
 ## **Overview of the Project**
 ### **Aims**
-The aim of this project is to investigate the evolutionary conservation and structural diversity of centromeric regions across Cochlearia excelsa, Cochlearia groenlandica, and Cochlearia pyrenaica through comparative genomics. 
-### **Outcome**
-- ToDo: Add outcomes here
+
+- Explore how centromeric regions are conserved and how they differ across Cochlearia excelsa, Cochlearia groenlandica, and Cochlearia pyrenaica by comparing their genomes.
+- Identify and study the repetitive DNA sequences in these centromeric regions to understand their role in keeping chromosomes stable and how they might influence species differences.
+- Examine the similarities and differences in the structure of these centromeric regions to learn more about how they evolve and affect plant genomes.
 
 ### **Results**
 - ToDo: Add results here
