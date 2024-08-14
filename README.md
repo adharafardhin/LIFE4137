@@ -14,6 +14,10 @@
 - Identify and study the repetitive DNA sequences in these centromeric regions to understand their role in keeping chromosomes stable and how they might influence species differences.
 - Examine the similarities and differences in the structure of these centromeric regions to learn more about how they evolve and affect plant genomes.
 
+## Datasets
+
+The primary input datasets for this project consist of the genomic sequences of three _Cochlearia species: Cochlearia excelsa, Cochlearia groenlandica, and Cochlearia pyrenaica._ These sequences were obtained in FASTA format and were essential for conducting comparative genomic analyses to investigate the evolutionary conservation and structural variation of centromeric regions across these species. _C. excelsa_ served as the reference genome due to its relatively well-assembled sequence, while _C. groenlandica and C. pyrenaica_ were used as target genomes for comparative analysis.
+
 ## **Repository Overview**
 
 | Directories                     | Description                                                                      |
