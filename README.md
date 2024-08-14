@@ -71,6 +71,27 @@ ModDotPlot is a powerful visualization tool designed for creating dot plots that
 
 It was a critical tool in this project for visualizing and identifying centromeric regions within the genomes of the Cochlearia species. This tool allows for the creation of detailed dot plots that highlight regions of high sequence similarity, which are indicative of repetitive elements often found in centromeres. By applying ModDotPlot, I could effectively visualize these repetitive regions across large genomic scaffolds, enabling the identification of centromeric regions based on the characteristic dense and symmetric patterns typical of centromeric DNA. This visualization was essential for confirming the repeat analysis performed with TRASH and provided a clear and intuitive way to assess the structural integrity and conservation of these genomic regions across the different species analyzed.
 
+#### Command usage:
+
+```bash
+moddotplot static --fasta "input_fasta_file_dir_for_excelsa" --output-dir "output_dir"
+```
+
+where:
+
+- --fasta / -f: Specifies the input FASTA file or directory containing FASTA files. Multifasta files are accepted, but in interactive mode, only two sequences can be supported at a time.
+- --output-dir / -o: Defines the output directory where the BED file and plots will be saved. If not specified, the default is the current working directory.
+- --kmer / -k: Sets the k-mer size for the analysis. The default is 21, but it can be adjusted based on the specificity and sensitivity required.
+- --identity / -id: Sets the minimum sequence identity cutoff threshold. The default is 86%, but lower thresholds are possible, although anything below 80% is generally not recommended.
+- --delta: Adjusts the fraction of neighboring partitions' k-mers considered. The default is 0.5, and values should typically range between 0 and 1.
+- --modimizer / -m: Defines the Modimizer sketch size, which affects the number of k-mers compared. Lower values increase speed but reduce accuracy.
+- --resolution / -r: Sets the dotplot resolution by determining the number of partitions for each input sequence. The default is 1000, which overrides the --window parameter.
+- --compare: If multiple sequences are input, this flag generates an "a vs. b" comparison plot in addition to self-identity plots.
+- --compare-only: Generates only the "a vs. b" comparison plot, skipping self-identity plots.
+- --ambiguous: Keeps k-mers with ambiguous IUPAC codes (e.g., NNNNNNNNNNN) in the analysis, which are excluded by default.
+- --no-plot: Saves the matrix to a file but skips rendering of plots.
+
+
 ## Liftoff: Accurate Gene Annotation Lift-over Tool
 Liftoff is a bioinformatics tool designed to accurately map gene annotations from one genome assembly to another, particularly between assemblies of the same or closely related species. Unlike traditional lift-over tools that require pre-generated chain files, Liftoff operates as a standalone tool, simplifying the process and increasing flexibility.
 
