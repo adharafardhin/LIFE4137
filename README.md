@@ -286,5 +286,16 @@ SLURM is a powerful, open-source job scheduling system used to manage and alloca
 
 ```salloc --nodes=1 --ntasks=4 --time=01:00:00``` : this command requests 1 node with 4 tasks for a 1-hour interactive session.
 
+## References
+
+| Tool Name    | Reference                                                                                                                     |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------|
+| TRASH        | Wlodzimierz, P., Hong, M. and Henderson, I.R., 2023. TRASH: tandem repeat annotation and structural hierarchy. Bioinformatics, 39(5), p.btad308. |
+| ModDotPlot   | Sweeten, A.P., Schatz, M.C. and Phillippy, A.M., 2024. ModDotPlot—Rapid and interactive visualization of complex repeats. bioRxiv. |
+| Liftoff      | Shumate, A. and Salzberg, S.L., 2021. Liftoff: accurate mapping of gene annotations. Bioinformatics, 37(12), pp.1639-1643.     |
+| MUMmer4      | Marçais, G., Delcher, A.L., Phillippy, A.M., Coston, R., Salzberg, S.L. and Zimin, A., 2018. MUMmer4: A fast and versatile genome alignment system. PLoS computational biology, 14(1), p.e1005944. |
+| MCScanX      | MCScanX: Multiple Collinearity Scan toolkit X version. The most popular synteny analysis tool in the world! [online] GitHub. Available at: https://github.com/wyp1125/MCScanX [Accessed 14 Aug. 2024]. |
+
+
 
 
