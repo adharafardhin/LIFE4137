@@ -74,3 +74,39 @@ MCScanX is a powerful bioinformatics tool designed for synteny analysis, which i
 - Gene Duplication Classification: The tool classifies duplicated genes into categories such as whole-genome duplications, tandem duplications, and segmental duplications.
 - Visualization Tools: MCScanX includes various visualization tools like dot plots, dual synteny plots, circular plots, and bar plots, helping researchers to graphically represent syntenic relationships and chromosomal rearrangements.
 - Downstream Analyses: The toolset includes multiple downstream analysis programs for advanced studies, such as detecting syntenic tandem arrays, analyzing multiple alignments, and calculating Ka/Ks values for evolutionary studies.
+
+# SLURM: Simple Linux Utility for Resource Management
+
+SLURM is a powerful, open-source job scheduling system used to manage and allocate resources on high-performance computing (HPC) clusters. It allows users to submit, manage, and monitor jobs efficiently, making it an essential tool for large-scale computational tasks. Since this project involved processing, analysis, comparison, and visualisation of large datas, I had to use SLURM to manage my jobs efficiently on the HPC cloud computer. 
+
+## Why use SLURM?
+
+- **Resource Management**: SLURM helps in managing and optimizing the usage of computational resources (CPU, memory, nodes) in a cluster environment.
+- **Job Scheduling**: It allows users to schedule jobs efficiently, ensuring that resources are allocated fairly and optimally among users.
+- **Scalability**: SLURM can manage clusters of various sizes, from a few nodes to thousands, making it highly scalable.
+- **Flexibility**: Users can easily specify the resources required for their jobs, including the number of CPUs, memory, and time, which helps in tailoring the job execution environment.
+
+## Basic SLURM commands:
+
+### Run/Submit a new job:
+
+```sbatch job_script.sh``` where job_script.sh file contains the series of commands we want to execute. Some example files can be found in the *scripts* folder of this repository. The .sh file should also contain some basic properties like memory allocation, time limit etc. at the beginning.
+
+### Check job status:
+
+```squeue -u your_username```
+
+### Cancel a job:
+
+```scancel job_id```
+
+### View detailed info about jobs:
+
+```scontrol show job job_id```
+
+### Real-time resource allocation for a job:
+
+```salloc --nodes=1 --ntasks=4 --time=01:00:00``` : this command requests 1 node with 4 tasks for a 1-hour interactive session.
+
+
+
