@@ -37,6 +37,15 @@ TRASH (Tandem Repeat Annotation and Structural Hierarchy) is a bioinformatics to
 - Multithreading Support: The tool supports multithreading, enabling the efficient processing of large genomic datasets by utilizing multiple cores.
 Customizable Parameters: TRASH offers a wide range of customizable parameters, allowing users to fine-tune the analysis to meet specific research needs.
 
+## ModDotPlot: Rapid and Interactive Visualization of Complex Repeats
+ModDotPlot is a powerful visualization tool designed for creating dot plots that showcase complex repeat structures in large genomic sequences. It generates identity heatmaps by rapidly approximating the Average Nucleotide Identity (ANI) between pairwise combinations of genomic intervals. This tool is particularly useful for researchers who need to visualize and compare large sequences or whole genomes efficiently.
+
+#### Key Features:
+- Interactive and Static Modes: ModDotPlot offers both an interactive mode, where users can explore genomic data in real-time using a web interface, and a static mode, which quickly generates publication-ready plots.
+- Flexible Input Options: The tool supports various input configurations, including single or multi-FASTA files, and can handle up to two sequences in interactive mode. It also allows for the comparison of different sequences.
+- Customizable Visualization: Users can adjust parameters such as k-mer size, resolution, and color palettes to tailor the dot plots to their specific research needs. ModDotPlot also supports detailed configuration through JSON files for creating highly customized plots.
+- Efficient Computation: By leveraging k-mer-based identity estimation and a modimizer sketching technique, ModDotPlot significantly reduces the computational time required to produce dot plots, making it suitable for real-time analysis of large datasets.
+
 ## Liftoff: Accurate Gene Annotation Lift-over Tool
 Liftoff is a bioinformatics tool designed to accurately map gene annotations from one genome assembly to another, particularly between assemblies of the same or closely related species. Unlike traditional lift-over tools that require pre-generated chain files, Liftoff operates as a standalone tool, simplifying the process and increasing flexibility.
 
@@ -46,6 +55,17 @@ Liftoff is a bioinformatics tool designed to accurately map gene annotations fro
 - Handling of Multiple Gene Copies: The tool can identify additional gene copies present in the target genome that are not annotated in the reference genome, enhancing the completeness of gene annotations.
 - Polishing Annotations: Liftoff includes an option to polish exon and CDS annotations, improving the accuracy of coding sequence preservation, particularly in cases where the initial lift-over may introduce errors such as frame shifts or missing start/stop codons.
 
+## MUMmer4: A Versatile Genome Alignment Tool
+MUMmer4 is a powerful and flexible system designed for the rapid alignment of DNA and protein sequences. It is capable of handling a wide range of genome sizes, from small bacterial genomes to large mammalian genomes. MUMmer4 is particularly effective for comparing and analyzing large and complex genomic datasets, offering tools for both nucleotide and protein alignments.
+
+#### Key Features:
+
+- High-Speed Alignment: Aligns two mammalian-sized genomes in approximately 3 hours on a typical high-performance workstation.
+- Versatile Alignment Capabilities: Supports both nucleotide sequence alignments using nucmer and protein sequence alignments through six-frame translations using promer.
+- Comprehensive Toolkit: Includes utilities for visualizing alignments, calculating SNPs, detecting tandem repeats, and analyzing synteny.
+- Open Source: Available under the Artistic License 2.0, allowing for wide accessibility and modifications.
+- Scalability: Efficiently handles all-vs-all comparisons, making it suitable for both small and large-scale genomic studies.
+
 ## MCScanX: Multiple Collinearity Scan Toolkit
 MCScanX is a powerful bioinformatics tool designed for synteny analysis, which identifies and visualizes collinear blocks of genes across multiple genomes. It builds upon the original MCScan algorithm, offering enhanced functionality and a suite of downstream analysis tools. MCScanX is widely used in comparative genomics studies to understand genome evolution, gene duplication, and structural variations between species.
 
@@ -54,12 +74,3 @@ MCScanX is a powerful bioinformatics tool designed for synteny analysis, which i
 - Gene Duplication Classification: The tool classifies duplicated genes into categories such as whole-genome duplications, tandem duplications, and segmental duplications.
 - Visualization Tools: MCScanX includes various visualization tools like dot plots, dual synteny plots, circular plots, and bar plots, helping researchers to graphically represent syntenic relationships and chromosomal rearrangements.
 - Downstream Analyses: The toolset includes multiple downstream analysis programs for advanced studies, such as detecting syntenic tandem arrays, analyzing multiple alignments, and calculating Ka/Ks values for evolutionary studies.
-
-## ModDotPlot: Rapid and Interactive Visualization of Complex Repeats
-ModDotPlot is a powerful visualization tool designed for creating dot plots that showcase complex repeat structures in large genomic sequences. It generates identity heatmaps by rapidly approximating the Average Nucleotide Identity (ANI) between pairwise combinations of genomic intervals. This tool is particularly useful for researchers who need to visualize and compare large sequences or whole genomes efficiently.
-
-#### Key Features:
-- Interactive and Static Modes: ModDotPlot offers both an interactive mode, where users can explore genomic data in real-time using a web interface, and a static mode, which quickly generates publication-ready plots.
-- Flexible Input Options: The tool supports various input configurations, including single or multi-FASTA files, and can handle up to two sequences in interactive mode. It also allows for the comparison of different sequences.
-- Customizable Visualization: Users can adjust parameters such as k-mer size, resolution, and color palettes to tailor the dot plots to their specific research needs. ModDotPlot also supports detailed configuration through JSON files for creating highly customized plots.
-- Efficient Computation: By leveraging k-mer-based identity estimation and a modimizer sketching technique, ModDotPlot significantly reduces the computational time required to produce dot plots, making it suitable for real-time analysis of large datasets.
