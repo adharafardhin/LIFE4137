@@ -12,6 +12,13 @@
    git clone https://github.com/vlothec/TRASH
    cd TRASH
 
+2. Install R:
+
+   ```
+   conda create -n name -c conda-forge r-base=4.1.3 zlib
+   conda activate name
+   ```
+
 2. **Install TRASH:**
 
    ```bash
