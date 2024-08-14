@@ -9,9 +9,9 @@
   - sed
   - awk
  
-### Download the latest release from here https://github.com/mummer4/mummer/releases
+### 1. Download the latest release from here [MUMmer4 Latest release](https://github.com/mummer4/mummer/releases)
 
-### Compilation and installation:
+### 2. Compilation and installation:
 
 ```
 ./configure --prefix=/path/to/installation
