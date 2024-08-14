@@ -45,7 +45,7 @@ This project focuses on the comparative genomic analysis of centromeric regions 
 
 ## Tools
 
-### Tool 1 - TRASH: Tandem Repeat Annotation and Structural Hierarchy 
+### [Tool 1 - TRASH: Tandem Repeat Annotation and Structural Hierarchy](https://github.com/vlothec/TRASH)
 TRASH (Tandem Repeat Annotation and Structural Hierarchy) is a bioinformatics tool designed for the identification, extraction, and analysis of tandem repeats within genomic sequences. This tool is particularly effective in detecting and characterizing higher-order repeat structures, which are critical for understanding genomic organization and function.
 
 #### Key Features:
@@ -94,7 +94,7 @@ Additional options:
 - --max.N.split x: Maximum number of N divisions in monomer splitting. Default is 12.
 - --smooth.percent x: Smoothing factor for finding histogram peaks in monomer splitting. Default is 2.
 
-## Tool 2 - ModDotPlot: Rapid and Interactive Visualization of Complex Repeats
+## [Tool 2 - ModDotPlot: Rapid and Interactive Visualization of Complex Repeats](https://github.com/marbl/ModDotPlot)
 ModDotPlot is a powerful visualization tool designed for creating dot plots that showcase complex repeat structures in large genomic sequences. It generates identity heatmaps by rapidly approximating the Average Nucleotide Identity (ANI) between pairwise combinations of genomic intervals. This tool is particularly useful for researchers who need to visualize and compare large sequences or whole genomes efficiently.
 
 #### Key Features:
@@ -128,7 +128,7 @@ where:
 - --no-plot: Saves the matrix to a file but skips rendering of plots.
 
 
-## Tool 3 - Liftoff: Accurate Gene Annotation Lift-over Tool
+## [Tool 3 - Liftoff: Accurate Gene Annotation Lift-over Tool](https://github.com/agshumate/Liftoff)
 Liftoff is a bioinformatics tool designed to accurately map gene annotations from one genome assembly to another, particularly between assemblies of the same or closely related species. Unlike traditional lift-over tools that require pre-generated chain files, Liftoff operates as a standalone tool, simplifying the process and increasing flexibility.
 
 #### Key Features:
@@ -162,7 +162,7 @@ Input Files:
 - The first input file is the target genome sequence (C. groenlandica).
 - The second input file is the reference genome sequence (C. excelsa).
 
-## Tool 4 - MUMmer4: A Versatile Genome Alignment Tool
+## [Tool 4 - MUMmer4: A Versatile Genome Alignment Tool](https://github.com/mummer4/mummer)
 MUMmer4 is a powerful and flexible system designed for the rapid alignment of DNA and protein sequences. It is capable of handling a wide range of genome sizes, from small bacterial genomes to large mammalian genomes. MUMmer4 is particularly effective for comparing and analyzing large and complex genomic datasets, offering tools for both nucleotide and protein alignments.
 
 #### Key Features:
@@ -200,7 +200,7 @@ on mummer output (.out), or nucmer/promer output (.delta).
 
 `./mummerplot -l <prefix>.delta`
 
-## Tool 5 - MCScanX: Multiple Collinearity Scan Toolkit
+## [Tool 5 - MCScanX: Multiple Collinearity Scan Toolkit](https://github.com/wyp1125/MCScanX)
 MCScanX is a powerful bioinformatics tool designed for synteny analysis, which identifies and visualizes collinear blocks of genes across multiple genomes. It builds upon the original MCScan algorithm, offering enhanced functionality and a suite of downstream analysis tools. MCScanX is widely used in comparative genomics studies to understand genome evolution, gene duplication, and structural variations between species.
 
 #### Key Features:
